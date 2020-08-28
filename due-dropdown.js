@@ -15,9 +15,6 @@ window.onload = function() {
   var desktop_unternehmenChildrenInitial = document.getElementById('desktop-unternehmen-children')
   desktop_unternehmenChildrenInitial.style.opacity = "0.0";
   
-  console.log("opacity sollte null sein")
-  console.log(parseFloat(desktop_unternehmenChildrenInitial.style.opacity))
-  
   desktop_leistungenTrigger.addEventListener('click', function (event) {
     var desktop_leistungenChildren = document.getElementById('desktop-leistungen-children')
     var style = getComputedStyle(desktop_leistungenChildren)
@@ -25,7 +22,7 @@ window.onload = function() {
     var display = style.display
   	if(opacity <= 0.0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
+
       desktop_leistungenChildren.style.display = 'block';
       $(desktop_leistungenChildren).animate({opacity: 1.0},200);
       
@@ -41,7 +38,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(desktop_leistungenChildren).animate({opacity:0.0},200);
       $(desktop_leistungenChildren).animate({display:'none'},250);
     }
@@ -54,7 +50,6 @@ window.onload = function() {
     var display = style.display
   	if(opacity <= 0.0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       desktop_maschinenChildren.style.display = 'block';
       $(desktop_maschinenChildren).animate({opacity:1.0},200);
       
@@ -70,7 +65,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(desktop_maschinenChildren).animate({opacity:0.0},200);
       $(desktop_maschinenChildren).animate({display:'none'},250);
     }
@@ -83,7 +77,6 @@ window.onload = function() {
     var display = style.display
   	if(opacity <= 0.0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       desktop_karriereChildren.style.display = 'block';
       $(desktop_karriereChildren).animate({opacity:1.0},200);
       
@@ -99,7 +92,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(desktop_karriereChildren).animate({opacity:0.0},200);
       $(desktop_karriereChildren).animate({display:'none'},250);
     }
@@ -112,7 +104,6 @@ window.onload = function() {
     var display = style.display
   	if(opacity <= 0.0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       desktop_unternehmenChildren.style.display = 'block';
       $(desktop_unternehmenChildren).animate({opacity:1.0},200);
       
@@ -128,7 +119,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(desktop_unternehmenChildren).animate({opacity:0.0},200);
       $(desktop_unternehmenChildren).animate({display:'none'},250);
     }
@@ -157,7 +147,6 @@ window.onload = function() {
     var display = style.display
   	if(height <= 0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       leistungenChildren.style.display = 'block';
       $(leistungenChildren).animate({height:$('#leistungen-children').get(0).scrollHeight},200);
       
@@ -173,7 +162,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(leistungenChildren).animate({height:0},200);
       $(leistungenChildren).animate({display:'none'},250);
     }
@@ -186,7 +174,6 @@ window.onload = function() {
     var display = style.display
   	if(height <= 0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       maschinenChildren.style.display = 'block';
       $(maschinenChildren).animate({height:$('#maschinen-children').get(0).scrollHeight},200);
       
@@ -202,7 +189,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(maschinenChildren).animate({height:0},200);
       $(maschinenChildren).animate({display:'none'},250);
     }
@@ -215,7 +201,6 @@ window.onload = function() {
     var display = style.display
   	if(height <= 0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       karriereChildren.style.display = 'block';
       $(karriereChildren).animate({height:$('#karriere-children').get(0).scrollHeight},200);
       
@@ -231,7 +216,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(karriereChildren).animate({height:0},200);
       $(karriereChildren).animate({display:'none'},250);
     }
@@ -244,7 +228,6 @@ window.onload = function() {
     var display = style.display
   	if(height <= 0 || display === 'none') {
     	//öffnen
-      console.log("öffnen")
       unternehmenChildren.style.display = 'block';
       $(unternehmenChildren).animate({height:$('#unternehmen-children').get(0).scrollHeight},200);
       
@@ -260,7 +243,6 @@ window.onload = function() {
       //leistungenChildren.style.height = 'auto';
    	} else {
       //schließen
-      console.log("schließen")
       $(unternehmenChildren).animate({height:0},200);
       $(unternehmenChildren).animate({display:'none'},250);
     }
