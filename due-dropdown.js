@@ -14,6 +14,40 @@ window.onload = function() {
   var desktop_unternehmenTrigger = document.getElementById('desktop-unternehmen-trigger')
   var desktop_unternehmenChildrenInitial = document.getElementById('desktop-unternehmen-children')
   desktop_unternehmenChildrenInitial.style.opacity = "0.0";
+
+  var desktop_sliderTrigger = document.getElementById('slider-trigger')
+  var desktop_headerTopTrigger = document.getElementById('header-top-trigger')
+
+  //click anywhere to close
+
+  desktop_sliderTrigger.addEventListener('click', function(event) {
+    $(desktop_leistungenChildren).animate({opacity:0.0},200);
+    $(desktop_leistungenChildren).animate({display:'none'},250);
+
+    $(desktop_maschinenChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_maschinenChildrenInitial).animate({display:'none'},250);
+    
+    $(desktop_karriereChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_karriereChildrenInitial).animate({display:'none'},250);
+    
+    $(desktop_unternehmenChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_unternehmenChildrenInitial).animate({display:'none'},250);
+  })
+
+  
+  desktop_headerTopTrigger.addEventListener('click', function(event) {
+    $(desktop_leistungenChildren).animate({opacity:0.0},200);
+    $(desktop_leistungenChildren).animate({display:'none'},250);
+
+    $(desktop_maschinenChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_maschinenChildrenInitial).animate({display:'none'},250);
+    
+    $(desktop_karriereChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_karriereChildrenInitial).animate({display:'none'},250);
+    
+    $(desktop_unternehmenChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_unternehmenChildrenInitial).animate({display:'none'},250);
+  })
   
   desktop_leistungenTrigger.addEventListener('click', function (event) {
     var desktop_leistungenChildren = document.getElementById('desktop-leistungen-children')
