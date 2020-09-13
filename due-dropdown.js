@@ -36,8 +36,8 @@ window.onload = function() {
 
   
   desktop_headerTopTrigger.addEventListener('click', function(event) {
-    $(desktop_leistungenChildren).animate({opacity:0.0},200);
-    $(desktop_leistungenChildren).animate({display:'none'},250);
+    $(desktop_leistungenChildrenInitial).animate({opacity:0.0},200);
+    $(desktop_leistungenChildrenInitial).animate({display:'none'},250);
 
     $(desktop_maschinenChildrenInitial).animate({opacity:0.0},200);
     $(desktop_maschinenChildrenInitial).animate({display:'none'},250);
