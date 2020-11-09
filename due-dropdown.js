@@ -33,10 +33,13 @@ window.onload = function() {
       $(desktop_unternehmenChildrenInitial).animate({opacity:0.0},200);
       $(desktop_unternehmenChildrenInitial).animate({display:'none'},250);
     }        
+  });
 
-    if(!$target.closest('#kontakt-formular').length) {
-      console.log("hallo ich bin: " + $target)
-    }
+  $("#kontakt-formular").click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('#kontakt-formular-wrap').length) {
+      $target.display = "none";
+    }  
   });
 
   /**click anywhere to close
