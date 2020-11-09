@@ -34,7 +34,7 @@ window.onload = function() {
       $(desktop_unternehmenChildrenInitial).animate({display:'none'},250);
     }        
 
-    if(!$target.closest('.kontakt-formular').length && $target.display !== 'none') {
+    if(!$target.closest('#kontakt-formular').length) {
       $target.display = "none"
     }
   });
