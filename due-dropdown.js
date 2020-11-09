@@ -39,7 +39,7 @@ window.onload = function() {
     var $target = $(event.target);
     if(!$target.closest('#kontakt-formular-wrap').length) {
       console.log("hallo ich bin jetzt hier")
-      $target.display = "none";
+      $target.style.display = "none";
     }  
   });
 
