@@ -35,7 +35,7 @@ window.onload = function() {
     }        
 
     if(!$target.closest('#kontakt-formular').length) {
-      $target.display = "none"
+      console.log("hallo ich bin: " + $target)
     }
   });
 
