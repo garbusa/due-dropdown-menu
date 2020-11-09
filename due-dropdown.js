@@ -38,6 +38,7 @@ window.onload = function() {
   $("#kontakt-formular").click(function(event) { 
     var $target = $(event.target);
     if(!$target.closest('#kontakt-formular-wrap').length) {
+      console.log("hallo ich bin jetzt hier")
       $target.display = "none";
     }  
   });
