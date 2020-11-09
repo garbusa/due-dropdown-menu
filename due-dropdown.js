@@ -18,9 +18,9 @@ window.onload = function() {
   var desktop_sliderTrigger = document.getElementById('slider-trigger')
   var desktop_headerTopTrigger = document.getElementById('header-top-trigger')
 
-  //click anywhere to close
-  if(desktop_sliderTrigger) {
-    desktop_sliderTrigger.addEventListener('click', function(event) {
+  $(document).click(function(event) { 
+    var $target = $(event.target);
+    if(!$target.closest('#desktop-menu').length) {
       $(desktop_leistungenChildrenInitial).animate({opacity:0.0},200);
       $(desktop_leistungenChildrenInitial).animate({display:'none'},250);
   
@@ -32,8 +32,15 @@ window.onload = function() {
       
       $(desktop_unternehmenChildrenInitial).animate({opacity:0.0},200);
       $(desktop_unternehmenChildrenInitial).animate({display:'none'},250);
+    }        
+  });
+
+  /**click anywhere to close
+  if(desktop_sliderTrigger) {
+    desktop_sliderTrigger.addEventListener('click', function(event) {
+
     })
-  }
+  } **/
   
 
   if(desktop_headerTopTrigger) {
