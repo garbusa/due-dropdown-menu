@@ -35,6 +35,7 @@ window.onload = function() {
     }        
   });
 
+  /* 
   $("#kontakt-formular").click(function(event) { 
     var $target = $(event.target);
     if(!$target.closest('#kontakt-formular-wrap').length) {
@@ -49,7 +50,7 @@ window.onload = function() {
       var contactFormular = document.getElementById('bauteile-formular')
       contactFormular.style.display = "none";
     }  
-  });
+  }); */
 
   /**click anywhere to close
   if(desktop_sliderTrigger) {
